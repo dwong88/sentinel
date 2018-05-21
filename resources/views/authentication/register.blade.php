@@ -1,6 +1,5 @@
-<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
-<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
-
+@extends('layouts.master')
+@section('content')
 <div class="container">
   <div class="row">
     <div class="col-md6 col-md-offset-3">
@@ -68,3 +67,4 @@
     </div>
   </div>
 </div>
+@endsection
