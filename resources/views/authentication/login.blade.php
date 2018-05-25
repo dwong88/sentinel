@@ -41,6 +41,13 @@
                       <input type="password" name="password" class="form-control" placeholder="Password" required>
                   </div>
                 </div>
+
+                <div class="form-group">
+                  <div class="input-group">
+                      Remember Me
+                      <input type="checkbox" name="remember_me">
+                  </div>
+                </div>
                 <a href="/forgot-password">
                   Forgot your password?
                 </a>
