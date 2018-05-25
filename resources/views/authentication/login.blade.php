@@ -11,6 +11,19 @@
           <div class="panel-body">
             <form action="/login" method="POST">
                {{ csrf_field() }}
+
+               @if(session('error'))
+                   <div class="alert alert-danger">
+                      {{ session('error')}}
+                   </div>
+              @endif
+
+              @if(session('success'))
+                  <div class="alert alert-success">
+                     {{ session('success')}}
+                  </div>
+              @endif
+
                 <div class="form-group">
                   <div class="input-group">
                       <span class="input-group-addon">
@@ -28,7 +41,9 @@
                       <input type="password" name="password" class="form-control" placeholder="Password" required>
                   </div>
                 </div>
-
+                <a href="/forgot-password">
+                  Forgot your password?
+                </a>
                 <div class="form-group">
                       <input type="submit" value="Login" class="btn btn-success pull-right">
                 </div>
